@@ -1,0 +1,6 @@
+Hi! 
+My name is Andrew, 
+and I'm making a career switch to (hopefully) software/web development.
+
+I've been self-teaching for a while, mainly learning python to create some projects for work.
+I'm excited to learn new languages (especially javascript!) and finally be able to host code on an interactive webpage.
