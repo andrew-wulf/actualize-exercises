@@ -106,6 +106,8 @@ demonstration()
 # If not, describe the part you got stuck on that requires more practice.
 
 # I forgot the syntax of gets.chomp (I used gets.chop, haha) and had to look it up.
-# I also would have wanted to used error handling and one of the built-in array methods to remove items, 
+# I also would have wanted to use error handling and one of the built-in array methods to remove items, 
 # I definitely want to get familiar with those.
 
+# pushing changes through the terminal seems to require an access token, 
+# and I'm not sure I can figure that out on my own. I'm commiting the normal way for now.
