@@ -12,16 +12,51 @@ numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
 
 
 
-#1 iterate over array
-#2 add each array element to new array
-#3 add conditional: only add if new array doesn't include the item
-
-
-new_numbers = []
+#1 Write a code that prints out the numbers.
 numbers.each do |n|
-    if not new_numbers.include?(n)
-        new_numbers.push(n)
-    end
+    puts n
 end
-pp new_numbers
+pp numbers
 
+#2 Write a code that prints the numbers, or the word "duplicate" when it finds a number equal to the first number.
+i = 1
+to_check = numbers[0]
+while i < numbers.length
+    if numbers[i] == to_check
+        puts "duplicate"
+    else
+        puts numbers[i]
+    end
+    i +=1
+end
+pp numbers
+
+#3 Write a code that removes duplicates of the first item instead of printing anything.
+i = 1
+to_check = numbers[0]
+while i < numbers.length
+    if numbers[i] == to_check
+        numbers.delete_at(i)
+    end
+    i +=1
+end
+pp numbers
+
+
+#4 Write a code that runs the same delete loop within another loop, moving the starting point up by one each time.
+numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
+
+i = 0
+while i < numbers.length
+    to_check = numbers[i]
+
+    z = i + 1
+    while z < numbers.length
+        if numbers[z] == to_check
+            numbers.delete_at(z)
+        end
+        z +=1
+    end
+    i +=1
+end
+pp numbers
